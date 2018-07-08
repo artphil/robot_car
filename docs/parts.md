@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Partes
+title: Material
 ---
 
 |[Home](index.md)|[Material](parts.md)|[Código](code.md)|

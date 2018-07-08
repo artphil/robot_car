@@ -1,4 +1,3 @@
-theme: jekyll-theme-time-machine
 
 title: Robot Car
 description: > # this means to ignore newlines until "baseurl:"
@@ -8,3 +7,13 @@ Arthur Phillip Silva ([github](https://artphil7.github.io/)), </br>
 graduando em **S**istemas de **I**nformação ([SI](http://dcc.ufmg.br/dcc/?q=pt-br/bsi)) </br>
 pelo **D**epartamento de **C**iência da **C**omputação ([DCC](http://dcc.ufmg.br/dcc/)) </br>
 da **U**niversidade **F**ederal de **M**inas **G**erais ([UFMG](https://www.ufmg.br/)).
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://artphil.github.io" # the base hostname & protocol for your site
+show_downloads: true
+
+github:
+  zip_url: https://github.com/artphil/robot_car/archive/master.zip
+
+gem "github-pages", group: :jekyll_plugins
+theme: jekyll-theme-time-machine
