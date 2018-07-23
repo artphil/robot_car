@@ -1,11 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 title: Home
 ---
-
 |[Home](index.md)|[Material](parts.md)|[Código](code.md)|
+---
 
 Arthur Phillip Silva ([github](https://artphil7.github.io/)), </br>
 graduando em **S**istemas de **I**nformação ([SI](http://dcc.ufmg.br/dcc/?q=pt-br/bsi)) </br>
