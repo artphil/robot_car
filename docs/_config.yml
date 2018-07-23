@@ -28,10 +28,10 @@ github:
 # Custom vars
 version:             1.0.0
 
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 theme: jekyll-theme-time-machine
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
