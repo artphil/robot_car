@@ -2,8 +2,9 @@
 layout: default
 title: Material
 ---
-|[Home](index.md)|[Material](parts.md)|[Código](code.md)|
+| [Home](index.md) | [Material](parts.md) | [Código](code.md) |
 ---
+| [Arduino](#arduino) | [Chassi](#chassi) | [Motores](#motores) |
 
 ## Arduino
 
