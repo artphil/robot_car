@@ -4,7 +4,7 @@ void c_tela::escreve()
 {
 	if (strcmp(linha1, linha1_nova) != 0)
 	{
-		strcpy(linha1, linha1_nova)
+		strcpy(linha1, linha1_nova);
 
 		lcd.setCursor(0,0);
 		lcd.print (linha1);
@@ -12,7 +12,7 @@ void c_tela::escreve()
 
 	if (strcmp(linha2, linha2_nova) != 0)
 	{
-		strcpy(linha2, linha2_nova)
+		strcpy(linha2, linha2_nova);
 
 		lcd.setCursor(0,1);
 		lcd.print (linha2);

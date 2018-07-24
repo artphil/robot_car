@@ -11,3 +11,4 @@ title: Material
 ## Chassi
 
 ## Motores
+![motor](https://photos.app.goo.gl/jS9F4vc47SAJGqsG9)
