@@ -5,7 +5,7 @@ title: Home
 |[Home](index.md)|[Material](parts.md)|[Código](code.md)|
 ---
 
-Arthur Phillip Silva ([site](https://artphil7.github.io/)),
+Arthur Phillip Silva ([site](https://artphil.github.io/)),
 graduando em **S**istemas de **I**nformação ([SI](http://dcc.ufmg.br/dcc/?q=pt-br/bsi))
 pelo **D**epartamento de **C**iência da **C**omputação ([DCC](http://dcc.ufmg.br/dcc/))
 da **U**niversidade **F**ederal de **M**inas **G**erais ([UFMG](https://www.ufmg.br/)).

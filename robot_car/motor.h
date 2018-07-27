@@ -2,13 +2,11 @@
 #define _MOTOR_
 
 #include "ambiente.h"
-#include <Adafruit_MotorShield.h>
-
-Adafruit_MotorShield AFMS = Adafruit_MotorShield();
+#include <AFMotor.h>
 
 class c_motor
 {
-	Adafruit_DCMotor *motor;
+	AF_DCMotor *motor;
 	int potencia;
 	int direcao;
 public:
@@ -41,5 +39,5 @@ public:
 
 	void print();
 };
-
+/**/
 #endif

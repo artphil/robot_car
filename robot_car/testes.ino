@@ -1,35 +1,74 @@
 #include "testes.h"
 
-c_eixo eixo_teste(MOTOR_PIN_ESQ, MOTOR_PIN_DIR);
-int p = 1;
-
+// Funcoes internas
 void teste_motor();
+void teste_eixo();
 
+// Implementacoes
 void inicia_testes()
 {
-	eixo_teste.esquerdo->set_potencia(128);
-	eixo_teste.direito->set_potencia(128);
+
 }
 
 void testes()
 {
-	teste_motor();
+	// teste_motor();
+	teste_eixo();
 }
 
 void teste_motor()
 {
-	int pot;
-	eixo_teste.frente();
+	c_motor motor_E(MOTOR_PIN_ESQ);
+	c_motor motor_D(MOTOR_PIN_DIR);
+	int pot, p = 1;
 
-	pot = eixo_teste.esquerdo->get_potencia();
+	while (true)
+	{
+		Serial.println("Motor E");
+		motor_E.print();
+		Serial.println("Motor D");
+		motor_D.print();
 
-	if (pot == 255 || pot == 0) p = -p;
-	pot += p;
+		motor_E.frente();
+		motor_D.frente();
 
-	eixo_teste.esquerdo->set_potencia(pot);
+		pot = motor_E.get_potencia();
 
-	pot = eixo_teste.esquerdo->get_potencia();
-	pot -= p;
+		if (pot == 255 || pot == 0) p = -p;
+		pot += p;
 
-	eixo_teste.direito->set_potencia(pot);
+		motor_E.set_potencia(pot);
+
+		pot = motor_D.get_potencia();
+		pot -= p;
+
+		motor_D.set_potencia(pot);
+
+		delay(50);
+	}
 }
+
+void teste_eixo()
+{
+	c_eixo eixo_teste(MOTOR_PIN_ESQ, MOTOR_PIN_DIR);
+	int pot, p = 1;
+
+	while (true)
+	{
+		eixo_teste.print();
+
+		eixo_teste.frente();
+
+		pot = eixo_teste.esquerdo->get_potencia();
+
+		if (pot == 255 || pot == 0) p = -p;
+		pot += p;
+
+		eixo_teste.esquerdo->set_potencia(pot);
+
+		eixo_teste.direito->set_potencia(pot);
+
+		delay(50);
+	}
+}
+/**/

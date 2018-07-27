@@ -3,7 +3,7 @@
 /*======= MOTOR =======*/
 c_motor::c_motor(int pino)
 {
-	motor = AFMS.getMotor(pino);
+	motor = new AF_DCMotor(pino);
 	potencia = 100;
 	direcao = RELEASE;
 }
@@ -47,11 +47,13 @@ void c_motor::set_potencia(int p)
 void c_motor::print()
 {
 	Serial.println("Descricao do Motor");
-	Serial.println("Potencia: " + potencia);
+	Serial.print("Potencia: ");
+	Serial.println(potencia);
 	Serial.print("Direcao: ");
 	if (direcao == FORWARD)  Serial.println("Frente");
 	else if (direcao == BACKWARD) Serial.println("Tras");
 	else Serial.println("Parado");
+	Serial.println();
 }
 
 /*======== EIXO ========*/
@@ -99,3 +101,4 @@ void c_eixo::print()
 	Serial.println("Motor Direito");
 	direito->print();
 }
+/**/
