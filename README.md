@@ -1,6 +1,6 @@
 # Robot Car
 
-Robo móvel autonomo baseado em Arduino
+Robo móvel diferencial autônomo baseado em Arduino
 
 Arthur Phillip Silva ([github](https://artphil7.github.io/)), </br>
 graduando em **S**istemas de **I**nformação ([SI](http://dcc.ufmg.br/dcc/?q=pt-br/bsi)) </br>
