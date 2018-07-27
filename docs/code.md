@@ -7,16 +7,19 @@ title: Código
 | [Motores](#motores) | [Tela](#tela) | [Testes](#testes) |
 
 ## Motores
-[Classe](/robot_car/motor.h)
-[Funcoes](/robot_car/motor.ino)
+[Classe](https://github.com/artphil/robot_car/blob/master/robot_car/motor.h)
+
+[Funcoes](https://github.com/artphil/robot_car/blob/master/robot_car/motor.ino)
 
 ## Tela
-[Classe](/robot_car/tela.h)
-[Funcoes](/robot_car/tela.ino)
+[Classe](https://github.com/artphil/robot_car/blob/master/robot_car/tela.h)
+
+[Funcoes](https://github.com/artphil/robot_car/blob/master/robot_car/tela.ino)
 
 ## Testes
 Foram feitos testes de componentes e testes de integração.
 
-os testes de integração estão no arquivo [testes.ino](/robot_car/testes.ino) e os restes do componentes estão em arquivos respectivos:
+Os testes de integração estão no arquivo [testes.ino](https://github.com/artphil/robot_car/blob/master/robot_car/testes.ino)
+e os testes dos componentes estão em arquivos respectivos:
 
-[motor](/teste_motor/teste_motor.ino)
+[motor](https://github.com/artphil/robot_car/blob/master/teste_motor/teste_motor.ino)
