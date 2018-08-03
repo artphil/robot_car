@@ -1,5 +1,7 @@
 theme: jekyll-theme-time-machine
 
 title: Robot Car
+description: >
+  Robo móvel diferencial autônomo baseado em Arduino
 
 url: https://artphil.github.io/

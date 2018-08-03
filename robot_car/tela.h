@@ -3,16 +3,16 @@
 
 #include <LiquidCrystal.h>
 #include <string.h>
-
-LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
+#include "ambiente.h"
 
 class c_tela
 {
-	char linha1[16];
-	char *linha1_nova;
-	char linha2[16];
-	char *linha2_nova;
+	String linha1;
+	String linha1_nova;
+	String linha2;
+	String linha2_nova;
 public:
+	c_tela();
 	void escreve();
 	void set_linha1(String);
 	void set_linha2(String);
@@ -20,5 +20,7 @@ public:
 	String get_linha1() {return linha1;}
 	String get_linha2() {return linha2;}
 };
+
+int verifica_botao (); // Identifica qual botao foi acionado
 
 #endif

@@ -15,5 +15,9 @@
 #define TRAS 	2
 #define ESQUEDA	3
 #define DIREITA 4
+#define CIMA 	5
+#define BAIXO 	6
+#define ESCOLHE 7
+
 
 #endif

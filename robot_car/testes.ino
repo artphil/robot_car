@@ -3,6 +3,7 @@
 // Funcoes internas
 void teste_motor();
 void teste_eixo();
+void teste_tela();
 
 // Implementacoes
 void inicia_testes()
@@ -14,6 +15,7 @@ void testes()
 {
 	// teste_motor();
 	teste_eixo();
+	// teste_tela();
 }
 
 void teste_motor()
@@ -71,4 +73,46 @@ void teste_eixo()
 		delay(50);
 	}
 }
+
+void teste_tela()
+{
+	c_tela tela_teste;
+
+	Serial.println("prints");
+	Serial.println(tela_teste.get_linha1());
+	Serial.println(tela_teste.get_linha2());
+
+	tela_teste.set_linha1("Testa tela");
+	tela_teste.escreve();
+
+	while (true)
+	{
+		int b = verifica_botao();
+		switch (b)
+		{
+			case DIREITA:
+			tela_teste.set_linha2("DIREITA");
+			break;
+
+			case ESQUEDA:
+			tela_teste.set_linha2(" ESQUEDA");
+			break;
+
+			case CIMA:
+			tela_teste.set_linha2("  CIMA");
+			break;
+
+			case BAIXO:
+			tela_teste.set_linha2("   BAIXO");
+			break;
+
+			case ESCOLHE:
+			tela_teste.set_linha2("    ESCOLHE");
+			break;
+
+		}
+		tela_teste.escreve();
+	}
+}
+
 /**/
